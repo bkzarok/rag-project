@@ -1,0 +1,6 @@
+pip install -U pip
+pip install requests beautifulsoup4 pandas pdfminer.six PyPDF2 readabilitylxml
+sentence-transformers faiss-cpu chromadb python-dotenv tiktoken
+spacy
+streamlit gradio
+python -m spacy download en_core_web_sm
