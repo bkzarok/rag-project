@@ -4,8 +4,8 @@ from pdfminer.high_level import extract_text as pdf_text
 from readability import Document
 from bs4 import BeautifulSoup
 
-INP = pathlib.Path("../data/raw")
-OUT = pathlib.Path("../data/interim")
+INP = pathlib.Path("./data/raw")
+OUT = pathlib.Path("./data/interim")
 OUT.mkdir(parents=True, exist_ok=True)
 
 for p in INP.iterdir():

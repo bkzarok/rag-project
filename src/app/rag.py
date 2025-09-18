@@ -2,11 +2,16 @@
 
 from openai import OpenAI, APIError
 import os
-from .prompt import build_prompt
-from ..index.search import topk
+from  prompt import build_prompt
+from search import topk
 
+from dotenv import load_dotenv
+load_dotenv()
 
-client = OpenAI()
+api_key = os.environ.get("OPENAI_API_KEY")
+if not api_key:
+    raise RuntimeError("The OPENAI_API_KEY environment variable is not set.")
+client = OpenAI(api_key=api_key)
 
 def answer(q, k=5):
     try:

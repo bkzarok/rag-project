@@ -1,12 +1,14 @@
 import os, requests
-from pathlib import Path
+from pathlib import Path 
 
 
-OUT = Path("../data/raw"); OUT.mkdir(parents=True, exist_ok=True)
+OUT = Path("./data/raw"); OUT.mkdir(parents=True, exist_ok=True)
+print(OUT.absolute())
+
 urls = [
     "https://faolex.fao.org/docs/pdf/ssd127441.pdf",
+    "https://faolex.fao.org/docs/pdf/ssd127441.pdf",
     "https://www.eia.gov/international/content/analysis/countries_long/Sudan_and_South_Sudan/pdf/Sudans%20CAB%20FY2024.pdf",
-    "https://verite.org/wp-content/uploads/2021/07/Verite-Country-Report-South-Sudan.pdf",
     "https://www.usip.org/sites/default/files/2021-04/sr_493-conflict_and_crisis_in_south_sudans_equatoria.pdf",
     "https://libraries.indiana.edu/libraries/pdf.js/web/viewer.html?file=https%3A%2F%2Flibraries.indiana.edu%2Fsites%2Fdefault%2Ffiles%2FSOUTH%2520SUDAN.pdf",
     "https://www.u4.no/publications/south-sudan-overview-of-corruption-and-anti-corruption.pdf",

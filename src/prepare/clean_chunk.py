@@ -2,8 +2,8 @@
 import json, uuid, re
 from pathlib import Path
 
-INP = Path("../data/interim")
-OUT = Path("../data/processed")
+INP = Path("./data/interim")
+OUT = Path("./data/processed")
 OUT.mkdir(parents=True, exist_ok=True)
 CHUNK, OVERLAP = 800, 120
 

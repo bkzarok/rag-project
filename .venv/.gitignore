@@ -17,3 +17,5 @@ Scripts
 config
 data
 notebooks
+*data/
+Data
